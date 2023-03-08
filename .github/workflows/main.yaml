@@ -37,7 +37,7 @@ jobs:
 
   fake-deploy:
     runs-on: self-hosted
-    needs: run-unit-tests
+    needs: build
     steps:
       - name: Get the artifact
         uses: actions/download-artifact@master
