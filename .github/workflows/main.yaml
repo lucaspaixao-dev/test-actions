@@ -25,8 +25,8 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean build
 
-      - name: Rename the artifact
-        run: cp build/libs/*-all.jar app.jar
+      - name: Move and rename the artifact
+        run: cp build/libs/actionsexample-0.0.1.jar app.jar
 
       - name: Save the artifact
         uses: actions/upload-artifact@master
