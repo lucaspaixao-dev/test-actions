@@ -8,4 +8,5 @@ class ActionsexampleApplication
 
 fun main(args: Array<String>) {
 	runApplication<ActionsexampleApplication>(*args)
+	print("olá github actions!")
 }
